@@ -5,10 +5,7 @@ import { boolean, select, withKnobs } from "@storybook/addon-knobs";
 import { CommonModule } from "@angular/common";
 import { AtomicComponentModule } from "projects/atomic-component/src/public-api";
 
-storiesOf(
-  "Components|Atoms/TestA",
-  module
-)
+storiesOf("Components|Atoms/TestA2", module)
   .addDecorator(withKnobs)
   .addDecorator(
     moduleMetadata({
