@@ -61,5 +61,9 @@ import { Component } from "@angular/core";
   ],
 })
 export class HeaderComponent {
+  /**
+   * The name of your app
+   */
+  title = "app";
   constructor() {}
 }

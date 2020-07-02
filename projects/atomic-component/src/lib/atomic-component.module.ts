@@ -8,6 +8,8 @@ import { RocketBadgeComponent } from "./components/rocket-badge/rocket-badge.com
 import { HeaderComponent } from "./components/header/header.component";
 import { StepButtonComponent } from "./components/step-button/step-button.component";
 import { TestAComponent } from './components/test-a/test-a.component';
+import { ButtonAComponent } from './components/button-a/button-a.component';
+import { ButtonGroupAComponent } from './components/button-group-a/button-group-a.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { TestAComponent } from './components/test-a/test-a.component';
     RocketBadgeComponent,
     StepButtonComponent,
     TestAComponent,
+    ButtonAComponent,
+    ButtonGroupAComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -30,6 +34,8 @@ import { TestAComponent } from './components/test-a/test-a.component';
     RocketBadgeComponent,
     StepButtonComponent,
     TestAComponent,
+    ButtonAComponent,
+    ButtonGroupAComponent,
   ],
 })
 export class AtomicComponentModule {}
