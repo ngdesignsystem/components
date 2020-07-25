@@ -6,7 +6,7 @@ import { Component, Input } from "@angular/core";
     <div>
       <div class="github-start-badge-container">
         <div class="github-star-badge">
-          <i-star class="material-icons"></i-star>
+          <i-star [width]="16" [height]="16" [style.display]="'flex'"></i-star>
           {{ label }}
         </div>
       </div>
@@ -14,11 +14,6 @@ import { Component, Input } from "@angular/core";
   `,
   styles: [
     `
-      svg.material-icons {
-        height: 24px;
-        width: auto;
-      }
-
       .github-start-badge-container {
         line-height: 20px;
       }

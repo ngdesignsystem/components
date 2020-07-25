@@ -64,8 +64,6 @@ export const IconsImpl = () => {
     template: `
         <div [ngStyle]="{'width': '100%'}">
           <div class="grid-container">
-            <!-- Row 1 -->
-            
             <i-cli [width]="100" [height]="100"></i-cli>
             <i-augury [width]="100" [height]="100"></i-augury>
             <i-protractor [width]="100" [height]="100"></i-protractor>
@@ -78,9 +76,6 @@ export const IconsImpl = () => {
             <i-fire [width]="100" [height]="100"></i-fire>
             <i-plus [width]="100" [height]="100"></i-plus>
             <i-star [width]="100" [height]="100"></i-star>
-           
-          
-         
       </div>
     </div>
     `,

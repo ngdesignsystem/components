@@ -16,16 +16,7 @@ import { Component, Input } from "@angular/core";
       />
     </svg>
   `,
-  styles: [
-    `
-      height: 16px;
-      width: 16px;
-      margin-right: 4px;
-      path {
-        fill: #888;
-      }
-    `,
-  ],
+  styles: [],
 })
 export class StarIconComponent {
   @Input() width: number = 24;

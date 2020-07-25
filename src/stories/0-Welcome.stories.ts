@@ -9,6 +9,21 @@ import {
   RocketBadgeComponent,
   CircleLinkComponent,
   StepButtonComponent,
+  AuguryIconComponent,
+  CliIconComponent,
+  FirebaseIconComponent,
+  ProtractorIconComponent,
+  MeetupIconComponent,
+  GitterIconComponent,
+  RocketIconComponent,
+  AcademyIconComponent,
+  NextIconComponent,
+  CodeIconComponent,
+  FireIconComponent,
+  PlusIconComponent,
+  StarIconComponent,
+  AngularIconComponent,
+  TwitterIconComponent,
 } from "../../projects/atomic-component/src/public-api";
 
 export default {
@@ -25,6 +40,21 @@ export default {
         CircleLinkComponent,
         StepButtonComponent,
         FooterComponent,
+        AuguryIconComponent,
+        CliIconComponent,
+        FirebaseIconComponent,
+        ProtractorIconComponent,
+        MeetupIconComponent,
+        GitterIconComponent,
+        RocketIconComponent,
+        AcademyIconComponent,
+        NextIconComponent,
+        CodeIconComponent,
+        FireIconComponent,
+        PlusIconComponent,
+        StarIconComponent,
+        AngularIconComponent,
+        TwitterIconComponent,
       ],
       imports: [CommonModule],
     }),
@@ -35,29 +65,31 @@ export const ToStorybook = () => ({
   template: `
     <section>
       <h2>Main Header</h2>
-      <ui-header></ui-header>
+      <m-header></m-header>
       <h2>Github button</h2>
       <div class="github-button-container">
-        <ui-github-button></ui-github-button>
+        <a-github-button></a-github-button>
       </div>
       <h2>Resource Link</h2>
       <div class="resource-link-container">
-        <ui-resource-link></ui-resource-link>
+        <a-resource-link></a-resource-link>
       </div>
       <h2>Circle Link</h2>
-      <ui-circle-link></ui-circle-link>
+      <a-circle-link>
+        <i-firebase></i-firebase>
+      </a-circle-link>
       <h2>Step Button</h2>
       <div class="step-button-container">
-        <ui-step-button></ui-step-button>
+        <a-step-button></a-step-button>
       </div>
       <h2>Rocket Badge</h2>
       <div class="rocket-badge-container">
         <br />
-        <ui-rocket-badge></ui-rocket-badge>
+        <a-rocket-banner></a-rocket-banner>
         <br />
       </div>
       <h2>Footer</h2>
-      <ui-footer></ui-footer>
+      <m-footer></m-footer>
     </section>
   `,
   styles: [

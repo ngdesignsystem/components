@@ -10,6 +10,6 @@ setCompodocJson(docJson);
 addParameters({
   docs: {
     // inlineStories: true,
-    iframeHeight: "200px",
+    iframeHeight: "70vh",
   },
 });
