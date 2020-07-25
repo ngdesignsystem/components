@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "ui-step-button",
+  selector: "a-step-button",
   template: `
     <div class="step-button " tabindex="0">
       <svg

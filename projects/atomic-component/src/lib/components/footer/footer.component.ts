@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "ui-footer",
+  selector: "m-footer",
   template: `
     <!-- Footer -->
     <footer>

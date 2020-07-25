@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-  selector: "ui-resource-link",
+  selector: "a-resource-link",
   template: `
     <a
       class="resource-link"

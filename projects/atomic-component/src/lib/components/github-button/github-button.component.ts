@@ -1,24 +1,13 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: "ui-github-button",
+  selector: "a-github-button",
   template: `
     <div>
       <div class="github-start-badge-container">
         <div class="github-star-badge">
-          <svg
-            class="material-icons"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-            />
-          </svg>
-          Star
+          <i-star class="material-icons"></i-star>
+          {{ label }}
         </div>
       </div>
     </div>
@@ -56,9 +45,8 @@ import { Component } from "@angular/core";
       }
 
       .github-star-badge .material-icons {
-        height: 16px;
-        width: 16px;
-        margin-right: 4px;
+        height: 24px;
+        width: auto;
       }
 
       svg#clouds {
@@ -72,5 +60,6 @@ import { Component } from "@angular/core";
   ],
 })
 export class GithubButtonComponent {
+  @Input() label: string = "Star";
   constructor() {}
 }
