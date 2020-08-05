@@ -42,10 +42,6 @@ export default {
 };
 
 export const FooterImpl = () => {
-  const name = text("name", "John Doe");
-  const age = number("age", 0);
-  const phoneNumber = text("phoneNumber", "555-55-55");
-
   return {
     moduleMetadata: {
       declarations: [Footer],
@@ -56,9 +52,7 @@ export const FooterImpl = () => {
           </m-footer>
         </div>
       `,
-    props: {
-      title: text("title", "Component dependencies"),
-    },
+    props: {},
   };
 };
 

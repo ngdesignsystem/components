@@ -1,11 +1,11 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
   selector: "m-header",
   template: `
     <div class="toolbar" role="banner">
       <i-angular id="angular-logo"></i-angular>
-      <span>Welcome</span>
+      <span>{{ title }}</span>
       <div class="spacer"></div>
       <a
         aria-label="Angular on twitter"
@@ -45,9 +45,6 @@ import { Component } from "@angular/core";
   ],
 })
 export class HeaderComponent {
-  /**
-   * The name of your app
-   */
-  title = "app";
+  @Input() title: string = "Welcome";
   constructor() {}
 }

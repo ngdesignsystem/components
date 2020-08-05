@@ -1,14 +1,11 @@
 import { action } from "@storybook/addon-actions";
 
-import { withKnobs, text } from "@storybook/addon-knobs";
+import { text } from "@storybook/addon-knobs";
 
 export default {
   title: "Foundation/Colors",
-  decorators: [withKnobs],
+  decorators: [],
   parameters: {
-    knobs: {
-      disableDebounce: true,
-    },
     docs: { iframeHeight: "calc(50vh)" },
   },
 };
@@ -152,7 +149,6 @@ export const ColorsImpl = () => {
       .grid-container .card.color-7 .cell:nth-of-type(2) {
         background-color: #333;
       }
-      
       .grid-container .color-name {
         font-size: 14px;
         font-weight: 500;
@@ -244,9 +240,7 @@ export const ColorsImpl = () => {
       </div>
     </div>
     `,
-    props: {
-      label: text("label", "Star"),
-    },
+    props: {},
   };
 };
 

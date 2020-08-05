@@ -42,22 +42,18 @@ export default {
 };
 
 export const StepButtonImpl = () => {
-  const name = text("name", "John Doe");
-  const age = number("age", 0);
-  const phoneNumber = text("phoneNumber", "555-55-55");
-
   return {
     moduleMetadata: {
       declarations: [StepButton],
     },
     template: `
         <div [ngStyle]="{'width': '150px'}">
-          <a-step-button>
+          <a-step-button [name]="name">
           </a-step-button>
         </div>
       `,
     props: {
-      title: text("title", "Component dependencies"),
+      name: text("name", "Learning material"),
     },
   };
 };

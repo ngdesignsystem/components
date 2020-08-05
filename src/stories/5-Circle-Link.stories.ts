@@ -1,18 +1,3 @@
-// import { action } from "@storybook/addon-actions";
-// import { linkTo } from "@storybook/addon-links";
-
-// import { CircleLinkComponent as CircleLink } from "projects/atomic-component/src/public-api";
-
-// export default {
-//   title: "Circle Link",
-//   component: CircleLink,
-// };
-
-// export const Default = () => ({
-//   component: CircleLink,
-//   props: {},
-// });
-
 import { action } from "@storybook/addon-actions";
 
 import {
@@ -43,9 +28,8 @@ export default {
 };
 
 export const CircleLinkImpl = () => {
-  const name = text("name", "John Doe");
-  const age = number("age", 0);
-  const phoneNumber = text("phoneNumber", "555-55-55");
+  const width = number("width", 40);
+  const height = number("height", 40);
 
   return {
     moduleMetadata: {
@@ -53,12 +37,15 @@ export const CircleLinkImpl = () => {
     },
     template: `
         <div [ngStyle]="{'width': '100px'}">
-          <a-circle-link>
-            <i-firebase></i-firebase>
+          <a-circle-link [width]="width" [height]="height">
+            <i-firebase [width]="width / 2" [height]="height / 2"></i-firebase>
           </a-circle-link>
         </div>
       `,
-    props: {},
+    props: {
+      width,
+      height,
+    },
   };
 };
 

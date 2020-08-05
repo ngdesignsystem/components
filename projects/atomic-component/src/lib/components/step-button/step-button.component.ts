@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
   selector: "a-step-button",
@@ -14,7 +14,7 @@ import { Component } from "@angular/core";
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
       </svg>
 
-      <span>New Component</span>
+      <span>{{ name }}</span>
     </div>
   `,
   styles: [
@@ -49,5 +49,6 @@ import { Component } from "@angular/core";
   ],
 })
 export class StepButtonComponent {
+  @Input() name: string = "name";
   constructor() {}
 }

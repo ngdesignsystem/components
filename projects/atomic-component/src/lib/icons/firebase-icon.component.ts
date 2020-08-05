@@ -48,7 +48,13 @@ import { Component, Input } from "@angular/core";
       />
     </svg>
   `,
-  styles: [],
+  styles: [
+    `
+      :host {
+        display: flex;
+      }
+    `,
+  ],
 })
 export class FirebaseIconComponent {
   @Input() width: number = 21.813;

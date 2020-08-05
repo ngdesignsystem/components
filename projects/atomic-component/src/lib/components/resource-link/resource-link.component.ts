@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
   selector: "a-resource-link",
@@ -21,17 +21,14 @@ import { Component } from "@angular/core";
         />
       </svg>
 
-      <span>Learn Angular</span>
+      <span>{{ name }}</span>
 
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
-      </svg>
+      <i-next
+        class="next-icon"
+        [style.display]="'flex'"
+        [width]="24"
+        [height]="24"
+      ></i-next>
     </a>
   `,
   styles: [
@@ -45,7 +42,11 @@ import { Component } from "@angular/core";
         margin-right: 8px;
       }
 
-      .resource-link svg.material-icons path {
+      .resource-link .material-icons path {
+        fill: #888;
+      }
+
+      .next-icon {
         fill: #888;
       }
 
@@ -76,9 +77,14 @@ import { Component } from "@angular/core";
       .resource-link:hover .material-icons path {
         fill: rgb(105, 103, 103);
       }
+
+      .resource-link:hover .next-icon {
+        fill: rgb(105, 103, 103);
+      }
     `,
   ],
 })
 export class ResourceLinkComponent {
+  @Input() name: string;
   constructor() {}
 }

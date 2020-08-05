@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
   selector: "a-circle-link",
@@ -9,6 +9,8 @@ import { Component } from "@angular/core";
       href="https://angular.io/guide/animations"
       target="_blank"
       rel="noopener"
+      [style.width]="width + 'px'"
+      [style.height]="height + 'px'"
     >
       <ng-content></ng-content>
     </a>
@@ -18,7 +20,7 @@ import { Component } from "@angular/core";
       .circle-link {
         height: 40px;
         width: 40px;
-        border-radius: 40px;
+        border-radius: 100%;
         margin: 8px;
         background-color: white;
         border: 1px solid #eeeeee;
@@ -38,5 +40,7 @@ import { Component } from "@angular/core";
   ],
 })
 export class CircleLinkComponent {
+  @Input() width: number = 40;
+  @Input() height: number = 40;
   constructor() {}
 }

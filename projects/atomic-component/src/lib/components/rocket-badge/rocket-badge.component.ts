@@ -6,7 +6,7 @@ import { Component, Input } from "@angular/core";
     <!-- Highlight Card -->
     <div class="card highlight-card card-small">
       <i-rocket id="rocket"> </i-rocket>
-      <span>{{ title }} app is running!</span>
+      <span>{{ appName }} app is running!</span>
     </div>
   `,
   styles: [
@@ -55,6 +55,6 @@ import { Component, Input } from "@angular/core";
   ],
 })
 export class RocketBadgeComponent {
-  @Input() title: string;
+  @Input() appName: string;
   constructor() {}
 }

@@ -22,6 +22,7 @@ import { CodeIconComponent } from "./icons/code-icon.component";
 import { FireIconComponent } from "./icons/fire-icon.component";
 import { PlusIconComponent } from "./icons/plus-icon.component";
 import { StarIconComponent } from "./icons/star-icon.component";
+import { ComponentNameComponent } from './components/component-name/component-name.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { StarIconComponent } from "./icons/star-icon.component";
     FireIconComponent,
     PlusIconComponent,
     StarIconComponent,
+    ComponentNameComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -72,6 +74,7 @@ import { StarIconComponent } from "./icons/star-icon.component";
     FireIconComponent,
     PlusIconComponent,
     StarIconComponent,
+    ComponentNameComponent,
   ],
 })
 export class AtomicComponentModule {}

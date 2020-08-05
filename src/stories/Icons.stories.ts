@@ -1,6 +1,6 @@
 import { action } from "@storybook/addon-actions";
 
-import { withKnobs, text } from "@storybook/addon-knobs";
+import { text } from "@storybook/addon-knobs";
 import {
   AuguryIconComponent,
   CliIconComponent,
@@ -19,7 +19,7 @@ import {
 
 export default {
   title: "Foundation/Icons",
-  decorators: [withKnobs],
+  decorators: [],
   parameters: {
     knobs: {
       disableDebounce: true,
@@ -79,9 +79,7 @@ export const IconsImpl = () => {
       </div>
     </div>
     `,
-    props: {
-      label: text("label", "Star"),
-    },
+    props: {},
   };
 };
 
