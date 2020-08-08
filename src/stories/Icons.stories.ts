@@ -83,4 +83,4 @@ export const IconsImpl = () => {
   };
 };
 
-IconsImpl.storyName = "basic";
+IconsImpl.storyName = "All";

@@ -244,4 +244,4 @@ export const ColorsImpl = () => {
   };
 };
 
-ColorsImpl.storyName = "basic";
+ColorsImpl.storyName = "All";
